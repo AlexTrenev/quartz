@@ -1,6 +1,13 @@
 ---
-title: Welcome to Quartz
+title: nev.xyz
 ---
-# Hello!
+---
+hi, my name is alex. 
 
-[[Test note]]
+informations systems graduate. i build things for fun sometimes and try to learn more on my free time.
+
+currently open to opportunities.
+
+---
+[[projects]]
+
