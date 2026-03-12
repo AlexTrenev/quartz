@@ -3,49 +3,30 @@ import * as Component from "./quartz/components"
 
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [],
+  header: [Component.Breadcrumbs(), Component.Darkmode(), Component.Search()],
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/AlexTrenev",
+      GitHub: "https://github.com/yourusername",
     },
   }),
 }
 
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
+    Component.ArticleTitle(),
     Component.ConditionalRender({
-      component: Component.Breadcrumbs(),
+      component: Component.ContentMeta(),
       condition: (page) => page.fileData.slug !== "index",
     }),
-    Component.ArticleTitle(),
-    Component.ContentMeta(),
     Component.TagList(),
   ],
-  left: [
-    Component.MobileOnly(Component.Spacer()),
-    Component.Flex({
-      components: [
-        { Component: Component.Search(), grow: false },
-        { Component: Component.Darkmode() },
-      ],
-    }),
-  ],
+  left: [],
   right: [],
 }
 
 export const defaultListPageLayout: PageLayout = {
-  beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
-  left: [
-    Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
-    Component.Flex({
-      components: [
-        { Component: Component.Search(), grow: true },
-        { Component: Component.Darkmode() },
-      ],
-    }),
-    Component.Explorer(),
-  ],
+  beforeBody: [Component.ArticleTitle(), Component.ContentMeta()],
+  left: [],
   right: [],
 }
