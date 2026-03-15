@@ -81,3 +81,7 @@ article p {
 article {
   font-size: 1.05rem;
 }
+
+.page-listing > p:first-of-type {
+  display: none;
+}
