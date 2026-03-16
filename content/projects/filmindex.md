@@ -7,8 +7,6 @@ tags:
 a film browsing site. search and view movies in a gallery format with images and metadata pulled from external apis.
 
 built to learn api handling and and how to structure api logic cleanly within a project.
-
-==hightlight==
 ### homepage:
 ![[Pasted image 20260312161029.png]]
 
