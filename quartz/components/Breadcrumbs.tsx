@@ -25,7 +25,7 @@ interface BreadcrumbOptions {
   /**
    * Whether to display the current page in the breadcrumbs.
    */
-  showCurrentPage: boolean
+  showCurrentPage: true
 }
 
 const defaultOptions: BreadcrumbOptions = {

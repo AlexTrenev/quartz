@@ -52,14 +52,6 @@ article + hr {
   display: none;
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-
 body {
   background-image: none;
 }
@@ -84,4 +76,15 @@ article {
 
 .page-listing > p:first-of-type {
   display: none;
+}
+
+footer {
+  display: none;
+}
+
+body[data-slug="index"] footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
