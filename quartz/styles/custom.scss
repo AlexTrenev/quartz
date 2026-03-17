@@ -3,8 +3,7 @@
 
 .explorer-content ul.explorer-ul li > a::before,
 .explorer-content .folder-container::before,
-.explorer-content .folder-container > svg,
-.explorer svg {
+.explorer-content .folder-container > svg {
   display: none !important;
   content: none !important;
 }
