@@ -3,11 +3,11 @@ import * as Component from "./quartz/components"
 
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [Component.Breadcrumbs(), Component.Darkmode(), Component.Search()],
+  header: [],
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/yourusername",
+      GitHub: "https://github.com/alextrenev",
     },
   }),
 }
@@ -21,7 +21,22 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.TagList(),
   ],
-  left: [],
+  left: [
+    Component.PageTitle(),
+    Component.MobileOnly(Component.Spacer()),
+    Component.Flex({
+      components: [
+        { Component: Component.Search(), grow: true },
+        { Component: Component.Darkmode() },
+      ],
+    }),
+    Component.Explorer({
+      title: "",
+      folderClickBehavior: "link",
+      folderDefaultState: "collapsed",
+      useSavedState: false,
+    }),
+  ],
   right: [],
 }
 

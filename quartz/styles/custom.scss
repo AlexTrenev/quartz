@@ -88,3 +88,52 @@ body[data-slug="index"] footer {
   align-items: center;
   gap: 0.5rem;
 }
+
+/* sidebar styling */
+.left.sidebar {
+  padding: 1.5rem 1rem;
+  gap: 0.5rem;
+}
+
+/* page title */
+.page-title {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* remove sidebar background/border if any */
+.left.sidebar {
+  background: none;
+  border: none;
+}
+
+/* explorer - simpler, no icons */
+.explorer {
+  margin-top: 1rem;
+}
+
+.explorer-ul {
+  padding: 0;
+  margin: 0;
+}
+
+.folder-outer, .explorer-li {
+  padding: 0;
+  margin: 0;
+}
+
+.folder-title, .explorer-li a {
+  font-size: 0.85rem;
+  color: var(--gray);
+  padding: 0.2rem 0;
+  display: block;
+}
+
+.folder-title:hover, .explorer-li a:hover {
+  color: var(--dark);
+}
+
+/* hide explorer icons */
+.fold-icon, .folder-icon {
+  display: none;
+}
