@@ -1,14 +1,9 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
-/**
- * Quartz 4 Configuration
- *
- * See https://quartz.jzhao.xyz/configuration for more information.
- */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Test",
+    pageTitle: "trenev.xyz",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -23,33 +18,33 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Geist",
-        body: "Geist",
-        code: "IBM Plex Mono",
+        header: "DM Sans",
+        body: "DM Sans",
+        code: "DM Mono",
       },
       colors: {
         lightMode: {
-          light: "#f4f1f2",
-          lightgray: "#e3dbde",
-          gray: "#94878c",
-          darkgray: "#483e42",
-          dark: "#2b2427",
-          secondary: "#9b6f7c",
-          tertiary: "#8d8085",
-          highlight: "rgba(155, 111, 124, 0.1)",
-          textHighlight: "#e7c3cc88",
+          light: "#fafaf9",
+          lightgray: "#e8e6e3",
+          gray: "#a39e98",
+          darkgray: "#4a4744",
+          dark: "#1c1917",
+          secondary: "#44403c",
+          tertiary: "#78716c",
+          highlight: "rgba(68, 64, 60, 0.06)",
+          textHighlight: "#e7e5e488",
         },
         darkMode: {
-          light: "#191516",
-          lightgray: "#262022",
-          gray: "#6c6064",
-          darkgray: "#d5cdd0",
-          dark: "#eee7e9",
-          secondary: "#b98796",
-          tertiary: "#a3979c",
-          highlight: "rgba(185, 135, 150, 0.12)",
-          textHighlight: "#dca6b388",
-        }
+          light: "#141412",
+          lightgray: "#262422",
+          gray: "#605a56",
+          darkgray: "#c4bfbb",
+          dark: "#f5f3f0",
+          secondary: "#d4cfc9",
+          tertiary: "#8a8480",
+          highlight: "rgba(212, 207, 201, 0.08)",
+          textHighlight: "#44403c88",
+        },
       },
     },
   },
@@ -88,7 +83,6 @@ const config: QuartzConfig = {
       Plugin.Static(),
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
-      // Comment out CustomOgImages to speed up build time
       Plugin.CustomOgImages(),
     ],
   },

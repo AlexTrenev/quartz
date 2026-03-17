@@ -7,13 +7,25 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/alextrenev",
+      GitHub: "https://github.com/yourusername",
     },
   }),
 }
 
+const explorerConfig = Component.Explorer({
+  folderClickBehavior: "link",
+  folderDefaultState: "open",
+  useSavedState: true,
+  filterFn: (node) => {
+    const hidden = ["_templates", "Example Title", "tags"]
+    return !hidden.includes(node.displayName)
+  },
+  order: ["filter", "map", "sort"],
+})
+
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
+    Component.Breadcrumbs(),
     Component.ArticleTitle(),
     Component.ConditionalRender({
       component: Component.ContentMeta(),
@@ -23,25 +35,26 @@ export const defaultContentPageLayout: PageLayout = {
   ],
   left: [
     Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
-    Component.Flex({
-      components: [
-        { Component: Component.Search(), grow: true },
-        { Component: Component.Darkmode() },
-      ],
-    }),
-    Component.Explorer({
-      title: "",
-      folderClickBehavior: "link",
-      folderDefaultState: "collapsed",
-      useSavedState: false,
-    }),
+    explorerConfig,
+    Component.Spacer(),
+    Component.Search(),
+    Component.Darkmode(),
   ],
   right: [],
 }
 
 export const defaultListPageLayout: PageLayout = {
-  beforeBody: [Component.ArticleTitle(), Component.ContentMeta()],
-  left: [],
+  beforeBody: [
+    Component.Breadcrumbs(),
+    Component.ArticleTitle(),
+    Component.ContentMeta(),
+  ],
+  left: [
+    Component.PageTitle(),
+    explorerConfig,
+    Component.Spacer(),
+    Component.Search(),
+    Component.Darkmode(),
+  ],
   right: [],
 }

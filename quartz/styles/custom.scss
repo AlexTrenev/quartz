@@ -1,8 +1,12 @@
 @use "base";
+@use "./variables.scss" as *;
 
-body {
-  background-image: radial-gradient(circle, var(--lightgray) 1.5px, transparent 1.5px);
-  background-size: 22px 22px;
+.explorer-content ul.explorer-ul li > a::before,
+.explorer-content .folder-container::before,
+.explorer-content .folder-container > svg,
+.explorer svg {
+  display: none !important;
+  content: none !important;
 }
 
 .page-header header {
@@ -22,13 +26,6 @@ body {
   padding: 2px 5px;
 }
 
-@media (min-width: 1200px) {
-  .page > #quartz-body {
-    padding: 0 8rem;
-  }
-}
-
-//// dividers ////
 hr {
   overflow: visible;
   padding: 0;
@@ -37,7 +34,7 @@ hr {
   border: none;
   text-align: center;
   width: 100%;
- 
+
   &:after {
     content: "* * *";
     display: inline-block;
@@ -50,10 +47,6 @@ hr {
 
 article + hr {
   display: none;
-}
-
-body {
-  background-image: none;
 }
 
 .tag-link {
@@ -79,61 +72,129 @@ article {
 }
 
 footer {
-  display: none;
+  display: none !important;
 }
 
-body[data-slug="index"] footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-/* sidebar styling */
-.left.sidebar {
-  padding: 1.5rem 1rem;
-  gap: 0.5rem;
-}
-
-/* page title */
 .page-title {
   font-size: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  margin-bottom: 0.5rem;
 }
 
-/* remove sidebar background/border if any */
-.left.sidebar {
-  background: none;
-  border: none;
+.breadcrumb-container {
+  margin-top: 0 !important;
 }
 
-/* explorer - simpler, no icons */
-.explorer {
-  margin-top: 1rem;
+.article-title {
+  margin-top: 0.25rem !important;
 }
 
-.explorer-ul {
-  padding: 0;
-  margin: 0;
+// layout
+
+$sidebar-width: 220px;
+
+@media all and ($desktop) {
+  #quartz-body {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .page > #quartz-body {
+    div.sidebar.left {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: $sidebar-width;
+      height: 100vh;
+      overflow-y: auto;
+      overflow-x: hidden;
+      box-sizing: border-box;
+      padding-top: 1.5rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-bottom: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      z-index: 10;
+      background-color: var(--light);
+    }
+
+    div.sidebar.left .spacer {
+      flex: 1 1 auto;
+    }
+
+    div.sidebar.left .search,
+    div.sidebar.left .darkmode {
+      margin-bottom: 0.25rem;
+    }
+
+    div.center {
+      margin-left: $sidebar-width;
+      width: calc(100vw - #{$sidebar-width});
+      max-width: calc(100vw - #{$sidebar-width});
+      box-sizing: border-box;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 1.5rem;
+
+      & > * {
+        max-width: 660px;
+        margin-left: 0;
+        margin-right: auto;
+      }
+    }
+  }
 }
 
-.folder-outer, .explorer-li {
-  padding: 0;
-  margin: 0;
-}
+$sidebar-width-tablet: 200px;
 
-.folder-title, .explorer-li a {
-  font-size: 0.85rem;
-  color: var(--gray);
-  padding: 0.2rem 0;
-  display: block;
-}
+@media all and ($tablet) {
+  #quartz-body {
+    width: 100%;
+    max-width: 100%;
+  }
 
-.folder-title:hover, .explorer-li a:hover {
-  color: var(--dark);
-}
+  .page > #quartz-body {
+    div.sidebar.left {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: $sidebar-width-tablet;
+      height: 100vh;
+      overflow-y: auto;
+      overflow-x: hidden;
+      box-sizing: border-box;
+      padding-top: 1.25rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+      z-index: 10;
+      background-color: var(--light);
+    }
 
-/* hide explorer icons */
-.fold-icon, .folder-icon {
-  display: none;
+    div.sidebar.left .spacer {
+      flex: 1 1 auto;
+    }
+
+    div.center {
+      margin-left: $sidebar-width-tablet;
+      width: calc(100vw - #{$sidebar-width-tablet});
+      max-width: calc(100vw - #{$sidebar-width-tablet});
+      box-sizing: border-box;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-top: 1.25rem;
+
+      & > * {
+        max-width: 660px;
+        margin-left: 0;
+        margin-right: auto;
+      }
+    }
+  }
 }
