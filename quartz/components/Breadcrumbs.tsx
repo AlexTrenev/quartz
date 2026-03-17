@@ -76,12 +76,29 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
       crumbs.pop()
     }
 
+    let displayCrumbs = crumbs
+
+    if (crumbs.length > 2) {
+      displayCrumbs = [
+        crumbs[0],
+        {
+          displayName: "...",
+          path: "",
+        },
+        crumbs[crumbs.length - 1],
+      ]
+    }
+
     return (
       <nav class={classNames(displayClass, "breadcrumb-container")} aria-label="breadcrumbs">
-        {crumbs.map((crumb, index) => (
+        {displayCrumbs.map((crumb, index) => (
           <div class="breadcrumb-element">
-            <a href={crumb.path}>{crumb.displayName}</a>
-            {index !== crumbs.length - 1 && <p>{` ${options.spacerSymbol} `}</p>}
+            {crumb.path ? (
+              <a href={crumb.path}>{crumb.displayName}</a>
+            ) : (
+              <span>{crumb.displayName}</span>
+            )}
+            {index !== displayCrumbs.length - 1 && <p>{` ${options.spacerSymbol} `}</p>}
           </div>
         ))}
       </nav>

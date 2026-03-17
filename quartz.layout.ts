@@ -7,7 +7,7 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/yourusername",
+      GitHub: "https://github.com/AlexTrenev",
     },
   }),
 }
@@ -25,7 +25,6 @@ const explorerConfig = Component.Explorer({
 
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
-    Component.Breadcrumbs(),
     Component.ArticleTitle(),
     Component.ConditionalRender({
       component: Component.ContentMeta(),
@@ -36,8 +35,8 @@ export const defaultContentPageLayout: PageLayout = {
   left: [
     Component.PageTitle(),
     explorerConfig,
+    Component.Breadcrumbs(),
     Component.Spacer(),
-    Component.Search(),
     Component.Darkmode(),
   ],
   right: [],
@@ -45,15 +44,14 @@ export const defaultContentPageLayout: PageLayout = {
 
 export const defaultListPageLayout: PageLayout = {
   beforeBody: [
-    Component.Breadcrumbs(),
     Component.ArticleTitle(),
     Component.ContentMeta(),
   ],
   left: [
     Component.PageTitle(),
     explorerConfig,
+    Component.Breadcrumbs(),
     Component.Spacer(),
-    Component.Search(),
     Component.Darkmode(),
   ],
   right: [],
