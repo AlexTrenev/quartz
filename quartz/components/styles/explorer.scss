@@ -29,6 +29,10 @@
       cursor: pointer;
       padding: 5px;
       z-index: 101;
+
+      svg line {
+        stroke: var(--darkgray);
+      }
     }
   }
 }
@@ -134,7 +138,23 @@
   }
 }
 
+//mobile
+
 @media all and ($mobile) {
+  .page > #quartz-body {
+    .sidebar.left:has(.explorer) {
+      box-sizing: border-box;
+      position: sticky;
+      background-color: var(--light);
+      padding: 1rem 0 1rem 0;
+      margin: 0;
+    }
+
+    .hide-until-loaded ~ .explorer-content {
+      display: none;
+    }
+  }
+
   .explorer {
     &.collapsed > .explorer-content {
       transform: translateX(-100vw);
@@ -149,7 +169,7 @@
     .explorer-content {
       box-sizing: border-box;
       z-index: 100;
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       margin-top: 0;
@@ -158,7 +178,7 @@
       max-width: 100vw;
       transform: translateX(-100vw);
       transition: transform 200ms ease, visibility 200ms ease;
-      overflow: hidden;
+      overflow-y: auto;
       padding: 4rem 1.5rem 2rem;
       height: 100dvh;
       max-height: 100dvh;
