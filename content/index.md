@@ -1,5 +1,5 @@
 ---
-title: nev.xyz
+title: trenev.xyz
 ---
 hi, my name is alex and this is my personal website/[[Digital Garden]].
 
