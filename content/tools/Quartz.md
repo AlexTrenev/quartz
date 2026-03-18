@@ -4,6 +4,6 @@ draft: false
 tags:
   - software
 ---
-[Quartz](https://quartz.jzhao.xyz/) is a static-site generator that transforms [[Obsidian]] *markdown* content into functional websites. 
+[Quartz](https://quartz.jzhao.xyz/) är en *static site-generator* som omvandlar [[Obsidian]] markdown innehåll till funktionella webbsidor. 
 
-created by *[Jacky Zhao](https://github.com/jackyzha0/quartz)*. 
+skapad av *[Jacky Zhao](https://github.com/jackyzha0/quartz)*. 

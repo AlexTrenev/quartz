@@ -1,18 +1,13 @@
 ---
-title: trenev.xyz
+title: 🏠
 ---
-hi, my name is alex and this is my personal website/[[Digital Garden]]. this website is built using [[Quartz]].
+hej, mitt namn är alex. detta är min personliga hemsida, byggd med *[[Quartz]]*.
 
-Bsc [[Information Systems]] graduate, based in Gothenburg, Sweden. interested in integrations and the flow of data between systems. 
+kandidatexamen i *[[Informatik]]* (*systemvetenskap*), bor i Göteborg.  
+jag är intresserad av integrationer och dataflöden mellan olika system. 
 
-open to opportunities in systems integration and api-based solutions. 
+öppen för möjligheter inom systemintegrationer och api-baserade lösningar. 
 
-[[projects]]
+[[projekt]]
 
 ---
-![[Pasted image 20260317001403.png]]
-![[Pasted image 20260317001309.png]]
-![[Pasted image 20260317001219.png]]
-
-
-![[Pasted image 20260316235716.png]]
