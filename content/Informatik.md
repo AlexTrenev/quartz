@@ -7,7 +7,7 @@ En examen i skärningspunkten mellan verksamhet och teknik, med fokus på hur or
 
 mitt examensarbete fokuserade på sociala medier och problematisk användning, där jag undersökte samspelet mellan plattformsdesign och användarvanor samt dess påverkan på användare.
 
-Studerade vid Göteborgs universitet & tog examen sommaren 2025.
+Studerade vid Göteborgs Universitet & tog examen sommaren 2025.
 
 ---
 
