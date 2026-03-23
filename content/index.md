@@ -1,7 +1,7 @@
 ---
 title: 🏠
 ---
-hej, mitt namn är alex. detta är min personliga hemsida, byggd med *[[Quartz]]*.
+hej, mitt namn är Alexander. detta är min personliga hemsida, byggd med *[[Quartz]]*.
 
 kandidatexamen i *[[Informatik]]* (*systemvetenskap*), bor i Göteborg.  
 jag är intresserad av integrationer och dataflöden mellan olika system. 
