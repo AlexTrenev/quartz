@@ -7,7 +7,7 @@ status: ej färdig!
 ---
 `React`  `REST-api`
 
-status: `ej färdig!`
+###### status: `ej färdig!`
 
 en filmsajt som visar filmer i ett galleriformat med bilder och metadata hämtad från externa api:er.
 

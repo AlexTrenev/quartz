@@ -4,20 +4,25 @@ draft: false
 tags:
   - project
 ---
-an injury tracking app built for athletes and physiotherapists. athletes log their pain and recovery, physios get a dashboard to monitor their patients. built as a group project with a team of four. my focus was frontend development. 
+`Dart`   `Flutter`   `React`   `Firebase` 
+###### status: `avslutad!`
+
+en app för att registrera och följa skador, framtagen för idrottare och fysioterapeuter. användaren loggar smärtor och återhämtning i appen och fysioterapeuten kan övervaka utvecklingen via webbgränssnittet. 
+
+byggd som ett grupprojekt i ett team på fyra personer.
 
 ---
-## how it works 
+## hur den fungerar
 
-two-sided — athletes log entries through a mobile-friendly interface, physiotherapists view patient history through a separate dashboard. 
+användare loggar skador och smärtor genom en mobilapplikation. denna delen av projektet är byggd med Dart / Flutter. sjukgymnaster får en överblick av patienthistorik genom en separat dashboard, byggd med React. 
 
-data is stored and synced in real time using firebase.
+data lagras och synkas med Firebase.
 
 --- 
-## what i learned 
+## vad jag lärde mig
 
- - building interfaces for two different user types 
- - working in a team with divided responsibilities 
- - getting familiar with firebase for real-time data 
- - translating user needs into features 
- - working within a regulated domain (healthcare) with real constraints
+ - kravhantering
+	 - anpassa gränssnitt för två olika användargrupper
+	 - översätta användarbehov till faktiska funktioner
+ - arbeta i lag med separate ansvarsområden
+ - att arbeta inom en reglerad bransch (sjukvård) med tydliga begränsningar
