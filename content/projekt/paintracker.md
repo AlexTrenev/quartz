@@ -26,3 +26,5 @@ data lagras och synkas med Firebase.
 	 - översätta användarbehov till faktiska funktioner
  - arbeta i lag med separate ansvarsområden
  - att arbeta inom en reglerad bransch (sjukvård) med tydliga begränsningar
+
+___

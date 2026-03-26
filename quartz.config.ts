@@ -18,8 +18,8 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "DM Sans",
-        body: "DM Sans",
+        header: "Inter",
+        body: "Inter", //Manrope
         code: "DM Mono",
       },
       colors: {
@@ -42,7 +42,7 @@ const config: QuartzConfig = {
           dark: "#f5f3f0",
           secondary: "#d4cfc9",
           tertiary: "#8a8480",
-          highlight: "rgba(212, 207, 201, 0.08)",
+          highlight: "rgba(201, 212, 202, 0.08)",
           textHighlight: "#44403c88",
         },
       },

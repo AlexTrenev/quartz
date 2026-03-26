@@ -2,7 +2,6 @@
 title: film index
 draft: false
 tags:
-  - "#projekt"
 status: ej färdig!
 ---
 `React`  `REST-api`

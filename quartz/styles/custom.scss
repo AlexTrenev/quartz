@@ -21,8 +21,8 @@
 
 .center a.internal {
   background-color: var(--highlight);
-  border-radius: 4px;
-  padding: 2px 5px;
+  border-radius: 2px;
+  padding: 1px 3px;
 }
 
 hr {
@@ -135,12 +135,12 @@ $sidebar-width: 220px;
       width: calc(100vw - #{$sidebar-width});
       max-width: calc(100vw - #{$sidebar-width});
       box-sizing: border-box;
-      padding-left: 2rem;
+      padding-left: 0rem;
       padding-right: 2rem;
-      padding-top: 1.5rem;
+      padding-top: 0rem;
 
       & > * {
-        max-width: 660px;
+        max-width: 600px; //660 ifall jag måste ändra tillbaka
         margin-left: 0;
         margin-right: auto;
       }
@@ -190,7 +190,7 @@ $sidebar-width-tablet: 200px;
       padding-top: 1.25rem;
 
       & > * {
-        max-width: 660px;
+        max-width: 600px; //660 ifall jag måste ändra tillbaka
         margin-left: 0;
         margin-right: auto;
       }
@@ -254,3 +254,16 @@ $sidebar-width-tablet: 200px;
 .content-meta {
   display: none;
 }
+
+
+// font
+
+body {
+  font-weight: 400;
+  letter-spacing: -0.05em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+

@@ -1,5 +1,5 @@
 ---
-title: projekt
+title: Projekt
 draft: false
 tags:
 ---
