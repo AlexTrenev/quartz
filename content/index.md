@@ -8,7 +8,7 @@ Jag är intresserad av integrationer och dataflöden mellan olika system.
 
 Öppen för möjligheter inom systemintegrationer och api-baserade lösningar. 
 
-- [[Projekt]] 
+- [[projekt]] 
 
 
 
