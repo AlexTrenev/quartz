@@ -3,7 +3,7 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Trenev",
+    pageTitle: "Trenev.xyz",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -24,15 +24,15 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#fafaf9",
-          lightgray: "#e8e6e3",
-          gray: "#a39e98",
-          darkgray: "#4a4744",
-          dark: "#1c1917",
-          secondary: "#44403c",
-          tertiary: "#78716c",
-          highlight: "rgba(68, 64, 60, 0.06)",
-          textHighlight: "#e7e5e488",
+        light: 'rgb(255, 252, 240)',
+        lightgray: 'rgb(230, 228, 217)',
+        gray: 'rgb(183, 181, 172)',
+        darkgray: 'rgb(111, 110, 105)',
+        dark: 'rgb(16, 15, 15)',
+        secondary: 'rgb(205, 213, 151)',
+        tertiary: 'rgb(252, 193, 146)',
+        highlight: 'rgb(218, 216, 206)',
+        textHighlight: "#44403c88",
         },
         darkMode: {
           light: "#141412",
