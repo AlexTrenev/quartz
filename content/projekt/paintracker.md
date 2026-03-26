@@ -2,7 +2,6 @@
 title: paintracker
 draft: false
 tags:
-  - project
 ---
 `Dart`   `Flutter`   `React`   `Firebase` 
 ###### status: `avslutad!`

@@ -2,7 +2,6 @@
 title: gmail2notion
 draft: false
 tags:
-  - project
 ---
 
 a Node.js server that automatically tracks job applications by monitoring a gmail inbox and logging relevant emails to a notion database.

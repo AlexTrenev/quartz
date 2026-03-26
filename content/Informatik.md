@@ -5,18 +5,18 @@ tags:
 ---
 En examen i skärningspunkten mellan verksamhet och teknik, med fokus på hur organisationer använder data och system för att lösa problem.  
 
-nämnbara kurser:
-- utveckling/teknik
-	- programmering
-	- databaser
-	- artificiell intelligens: maskininlärning och dataanalys
-	- cybersäkerhet
-- organisation
-	- strategi, arkitektur och styrning
-	- organisationer
-	- datadriven verksamhetsutveckling
+Nämnvärda kurser:
+- Utveckling/teknik
+	- Programmering
+	- Databaser
+	- Artificiell Intelligens: maskininlärning och dataanalys
+	- Cybersäkerhet
+- Organisation
+	- Strategi, arkitektur och styrning
+	- Organisationer
+	- Datadriven verksamhetsutveckling
 
-mitt examensarbete fokuserade på sociala medier och problematisk användning, där jag undersökte samspelet mellan plattformsdesign och användarvanor samt dess påverkan på användare.
+Mitt examensarbete fokuserade på sociala medier och problematisk användning, där jag undersökte samspelet mellan plattformsdesign och användarvanor samt dess påverkan på användare.
 
 Studerade vid Göteborgs Universitet & tog examen sommaren 2025.
 
