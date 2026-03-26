@@ -91,7 +91,7 @@ footer {
 
 // layout
 
-$sidebar-width: 220px;
+$sidebar-width: 260px;
 
 @media all and ($desktop) {
   #quartz-body {
@@ -148,7 +148,7 @@ $sidebar-width: 220px;
   }
 }
 
-$sidebar-width-tablet: 200px;
+$sidebar-width-tablet: 260px;
 
 @media all and ($tablet) {
   #quartz-body {
@@ -185,9 +185,9 @@ $sidebar-width-tablet: 200px;
       width: calc(100vw - #{$sidebar-width-tablet});
       max-width: calc(100vw - #{$sidebar-width-tablet});
       box-sizing: border-box;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-      padding-top: 1.25rem;
+      padding-left: 0rem;
+      padding-right: 2rem;
+      padding-top: 0rem;
 
       & > * {
         max-width: 600px; //660 ifall jag måste ändra tillbaka
@@ -260,7 +260,10 @@ $sidebar-width-tablet: 200px;
 
 body {
   font-weight: 400;
-  letter-spacing: -0.05em;
+}
+
+strong, b {
+  font-weight: 600;
 }
 
 h1, h2, h3, h4, h5, h6 {
