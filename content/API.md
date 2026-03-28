@@ -8,9 +8,13 @@ APIer användes ofta över [[HTTP]] och returnerar data i format som [[JSON]] el
 
 ---
 Se även:
+
 [[REST]]
+
 [[SOAP]]
+
 [[JSON]]
+
 [[XML]]
 
 
