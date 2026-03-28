@@ -3,7 +3,7 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Trenev",
+    pageTitle: "Trenev.xyz",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -19,12 +19,12 @@ const config: QuartzConfig = {
       cdnCaching: true,
       typography: {
         header: "Inter",
-        body: "Inter", //Manrope
+        body: "Manrope", //Manrope
         code: "DM Mono",
       },
       colors: {
         lightMode: {
-          light: "#fafaf9",
+        light: 'rgb(255, 252, 240)',
           lightgray: "#e8e6e3",
           gray: "#a39e98",
           darkgray: "#4a4744",
