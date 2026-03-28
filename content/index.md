@@ -7,7 +7,7 @@ Kandidatexamen i [[Informatik]] (Systemvetenskap), bor i Göteborg.
 
 Öppen för möjligheter inom systemintegrationer och api-baserade lösningar. 
 
-På denna sidan kan man hitta mina personliga *[[Projekt]]*.
+På denna sidan kan man hitta mina personliga [[projekt]]. 
 
 ----
 *Misc* 
