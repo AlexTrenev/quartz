@@ -12,8 +12,9 @@ en filmsajt som visar filmer i ett galleriformat med bilder och metadata hämtad
 
 byggd för att lära mig api-hantering och hur man strukturerar api-logik på ett rent sätt inom ett projekt.
 
+---
 
-### startsida:
+### Startsida
 ![[Pasted image 20260312161029.png]]
 
 ---
