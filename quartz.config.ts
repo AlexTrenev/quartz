@@ -19,7 +19,7 @@ const config: QuartzConfig = {
       cdnCaching: true,
       typography: {
         header: "Inter",
-        body: "Inter", //Manrope
+        body: "Manrope", //Manrope
         code: "DM Mono",
       },
       colors: {

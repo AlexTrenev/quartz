@@ -3,19 +3,25 @@ title: Setup
 draft: false
 tags:
 ---
-Några verktyg jag använder på min MacBook.
+Några verktyg jag använder på min MacBook:
+## Terminal
 
-# Ghostty
+Jag använder *[Ghostty](https://ghostty.org/)* som min terminalapp. Mycket snabbare och smidigare än macOS-terminalen. Den är även väldigt anpassningsbar, vilket jag gillar!
 
-Jag använder Ghostty som min terminalapp. ![[Pasted image 20260327232125.png]]
+![[Skärmavbild 2026-03-28 kl. 00.42.04.png]]
 
+---
 
+## Anteckningar
 
+Har börjat använda [[Obsidian]] för mina anteckningar. Gillar även [[Notion]].
 
-[[Ghostty]] som min terminalapp.
+---
 
-Försöker att använda [[Obsidian]] för anteckningar, men gillar även [[Notion]]. 
+## Webbläsare
 
-[Zen Browser](https://zen-browser.app/) som standardwebbläsare. 
+Jag använder [Zen Browser](https://zen-browser.app/) som min standardwebbläsare. 
+
+Stilren + inte Chromium, vilket är ett stort plus!
 
 
