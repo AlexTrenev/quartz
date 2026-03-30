@@ -3,37 +3,39 @@ title: gmail2notion
 draft: false
 tags:
 ---
+`node.js` `oauth 2.0` `rest api` `notion api` `gmail api`
+Gmail to Notion-pipeline
 
-a Node.js server that automatically tracks job applications by monitoring a gmail inbox and logging relevant emails to a notion database.
+en Node.js-server som automatiskt spårar jobbansökningar genom att
+övervaka en gmail-inkorg och logga relevanta mejl till en notion-databas.
 
-built to learn oauth 2.0 and what it actually takes to wire
-two third-party apis together end to end.
+byggd för att lära mig oauth 2.0 och vad det faktiskt innebär att
+koppla ihop två tredjeparts-api:er från början till slut.
 
----
 
-## how it works
-
-1. authenticates with gmail via oauth 2.0 — full authorization code
-   flow with access and refresh tokens
-2. fetches emails via the gmail api with pagination, filtered by
-   job-related keywords
-3. classifies each email as applied, interview, rejected or unknown using a keyword classifier
-4. checks notion for existing entries via gmail message id to prevent
-   duplicates
-5. logs new entries to notion with company, subject, date and status
 
 ---
 
-## what i learned
+## hur det fungerar
 
-- oauth 2.0 implementation
-- consuming and combining two rest apis
-- pagination handling for large data sets
-- data transformation
+1. autentiserar med gmail via oauth 2.0 — fullt authorization code flow med access- och refresh-tokens
+2. hämtar mejl via gmail api med paginering, filtrerat på jobbrelerade nyckelord
+3. klassificerar varje mejl som ansökt, intervju, avslag eller okänt via en nyckelordsklassificerare
+4. kontrollerar notion efter befintliga poster via gmail-meddelande-id för att undvika dubletter
+5. loggar nya poster till notion med företag, ämne, datum och status
 
 ---
 
-## next
+## vad jag lärde mig
 
-replace manual polling with gmail push notifications via
-google cloud pub/sub making it fully event-driven.
+- oauth 2.0-implementation från grunden
+- konsumera och kombinera två rest api:er
+- paginering för stora datamängder
+- datatransformation och mappning
+
+---
+
+## nästa steg
+
+ersätta manuell polling med gmail push-notiser via google cloud pub/sub
+för att göra det helt event-drivet.
