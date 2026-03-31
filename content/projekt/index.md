@@ -5,11 +5,11 @@ tags:
 ---
 jag bygger projekt för att lära mig. varje projekt är en ursäkt att testa något jag inte rört tidigare.
 
-[[filmindex]] -- api-hantering & dataflöden
+[[filmindex]]
 
-[[gmail2notion pipeline]] -- oauth2 & tredjepartsintegrationer
+[[gmail2notion pipeline]] 
 
-[[paintracker]] --
+[[paintracker]]
 
 
 
