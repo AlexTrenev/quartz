@@ -12,4 +12,4 @@ På denna sidan kan man hitta mina personliga [[Projekt]]📂.
 ----
 *Misc* 
 
-[[Setup]]  ,   [[Quartz]] , 
+[[Setup]] , [[Quartz]] , 

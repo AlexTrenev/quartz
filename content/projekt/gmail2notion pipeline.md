@@ -3,8 +3,6 @@ title: Gmail to Notion-pipeline
 draft: false
 tags:
 ---
-**tech**: node.js. ouath 2.0, rest api, notion api, gmail api
-
 <div style="
   display: flex; 
   align-items: center; 

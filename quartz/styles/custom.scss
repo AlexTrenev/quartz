@@ -183,8 +183,8 @@ article a.internal {
   transition: text-decoration-color 0.2s ease, color 0.2s ease;
 
   &:hover {
-    color: var(--secondary);
-    text-decoration-color: var(--secondary);
+    color: var(--tertiary);
+    text-decoration-color: var(--tertiary);
   }
 }
 
@@ -218,13 +218,31 @@ article h1, article h2, article h3 {
   display: none !important;
 }
 
-
-.tech-line {
-  margin-top: 6px;
+body[data-slug="index"] {
+  .popover {
+    display: none !important;
+    pointer-events: none;
+  }
 }
 
-.tech-stack img, .tech-stack svg {
-  height: 35px;
-  width: auto;
-  margin: 5px;
+//externa länkar
+a.external {
+  color: rgb(74, 89, 255);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 1px;              
+  
+  &::after {
+    content: "↗";
+    font-size: 0.8em;
+    transition: transform 0.2s ease;
+    display: inline-block;
+
+  }
 }
+
+a.external svg {
+  display: none !important;
+}
+
