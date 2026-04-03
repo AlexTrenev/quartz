@@ -87,6 +87,7 @@ function contentToHast(content: NewContent[]): HastContent[] {
           style: "cursor: pointer;" 
         }, [
           h("span.summary", [hastFromHtml(item.text)]),
+          hastFromHtml(" "),
           h("span.expanded", process(item.expansions))
         ]))
       }
@@ -109,26 +110,28 @@ export const TelescopicText: QuartzTransformerPlugin<any> = () => {
           const content = parseMarkdown(toString(code))
           if (parent && typeof index === "number") {
             parent.children.splice(index, 1, h("div.telescopic-container", [
-              // refresh
+              // Replay – stannar uppe till vänster
               h("span.replay", { 
                 onclick: "window.telescopicReset(this)",
-                style: "cursor: pointer; display: inline-flex; vertical-align: middle; margin-right: 2px;" 
+                style: "cursor: pointer; display: inline-flex; align-self: flex-start; margin-top: 2px; margin-right: 2px;" 
               }, [
                 s("svg", { ...svgOptions, height: 11, width: 11, style: "opacity: 0.8;" }, [
                   s("path", { d: "M23 4v6h-6" }), s("path", { d: "M20.49 15a9 9 0 1 1-2.12-9.36L23 10" })
                 ])
               ]),
-              // txt
-              h("span#telescope", { style: "display: inline; vertical-align: middle;" }, contentToHast(content)),
-              // Plus
-              h("span.expand", { 
-                onclick: "window.telescopicNext(this)",
-                style: "cursor: pointer; display: inline-flex; vertical-align: middle; margin-left: 2px;" 
-              }, [
-                s("svg", { ...svgOptions, height: 15, width: 15, style: "opacity: 0.8;" }, [
-                  s("line", { x1: "12", y1: "5", x2: "12", y2: "19" }), s("line", { x1: "5", y1: "12", x2: "19", y2: "12" })
+              // Text + plus inline
+              h("span#telescope", { style: "display: inline; vertical-align: middle;" }, [
+                ...contentToHast(content),
+                // Plus – inline direkt efter texten
+                h("span.expand", { 
+                  onclick: "window.telescopicNext(this)",
+                  style: "cursor: pointer; display: inline-flex; vertical-align: middle; margin-left: 2px;" 
+                }, [
+                  s("svg", { ...svgOptions, height: 15, width: 15, style: "opacity: 0.8;" }, [
+                    s("line", { x1: "12", y1: "5", x2: "12", y2: "19" }), s("line", { x1: "5", y1: "12", x2: "19", y2: "12" })
+                  ])
                 ])
-              ])
+              ]),
             ]))
           }
         })

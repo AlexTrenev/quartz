@@ -1,20 +1,32 @@
 document.addEventListener("nav", () => {
-  const telescopics = document.querySelectorAll(".telescopic-container") as NodeListOf<HTMLElement>
+  const telescopics = document.querySelectorAll(".telescopic-container")
   if (telescopics.length === 0) return
 
   telescopics.forEach((tel) => {
-    const el = tel.querySelector("div#telescope") as HTMLElement
+    const el = tel.querySelector("#telescope")
     if (!el) return
 
-    const expandable = el.querySelectorAll('span[class~="details"]') as NodeListOf<HTMLSpanElement>
+    const expandable = el.querySelectorAll("span.details")
 
-    expandable.forEach((closed) => {
-      function onClick() {
-        closed.classList.remove("close")
-        closed.classList.add("open")
+    function expandNext() {
+      const firstHidden = Array.from(expandable).find((span) => {
+        if (!span.classList.contains("close")) return false
+        const parentDetails = span.parentElement?.closest(".details")
+        return !parentDetails || parentDetails.classList.contains("open")
+      })
+      if (firstHidden) {
+        firstHidden.classList.remove("close")
+        firstHidden.classList.add("open")
       }
-      closed.addEventListener("click", onClick)
-      window.addCleanup(() => closed.removeEventListener("click", onClick))
+    }
+
+    expandable.forEach((span) => {
+      function onClick(e: Event) {
+        e.stopPropagation()
+        expandNext()
+      }
+      span.addEventListener("click", onClick)
+      window.addCleanup(() => span.removeEventListener("click", onClick))
     })
 
     tel.querySelectorAll(".replay").forEach((rpl) => {
@@ -30,10 +42,7 @@ document.addEventListener("nav", () => {
 
     tel.querySelectorAll(".expand").forEach((exp) => {
       function onClick() {
-        expandable.forEach((clse) => {
-          clse.classList.toggle("close", false)
-          clse.classList.toggle("open", true)
-        })
+        expandNext()
       }
       exp.addEventListener("click", onClick)
       window.addCleanup(() => exp.removeEventListener("click", onClick))

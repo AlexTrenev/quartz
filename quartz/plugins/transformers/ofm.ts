@@ -538,6 +538,35 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
         })
       }
 
+      plugins.push(() => {
+        return (tree: Root) => {
+          visit(tree, "paragraph", (node: Paragraph, index: number | undefined, parent) => {
+            if (index === undefined || parent === undefined) return
+
+            const isOnlyImages = node.children.every((child) => {
+              if (child.type === "image") return true
+              if (child.type === "text") return (child.value as string).trim() === ""
+              return false
+            })
+
+            const imageNodes = node.children.filter((c) => c.type === "image")
+            if (isOnlyImages && imageNodes.length >= 2) {
+              const htmlContent = node.children
+                .filter((c) => c.type === "image")
+                .map((img) => mdastToHtml(img))
+                .join("\n")
+
+              const gridNode: Html = {
+                type: "html",
+                value: `<div class="image-grid">\n${htmlContent}\n</div>`,
+              }
+
+              parent.children.splice(index, 1, gridNode)
+            }
+          })
+        }
+      })
+
       return plugins
     },
     htmlPlugins() {
@@ -791,3 +820,4 @@ declare module "vfile" {
     hasMermaidDiagram: boolean | undefined
   }
 }
+

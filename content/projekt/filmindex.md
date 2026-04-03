@@ -51,9 +51,9 @@ Inkluderar även en "Hitta film"-funktion. utifrån användarens val hämtas tre
 
 ---
 
-
-![[Skärmavbild 2026-04-02 kl. 23.38.55.png]]
 ![[Skärmavbild 2026-04-02 kl. 23.39.14.png]]
+![[Skärmavbild 2026-04-02 kl. 23.38.55.png]]
+
 
 ---
 ## Vad jag lärde mig

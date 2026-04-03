@@ -247,11 +247,17 @@ a.external svg {
 }
 
 //tele
-:root {
-  --telescope-highlight: #fcc16d55;
-  --telescope-highlight-hover: var(--gold);
-  --telescope-text-color: var(--dark);
-  --telescope-border: #888;
+:root[saved-theme="dark"] {
+  --telescope-highlight: #fcc16d33;
+  --telescope-highlight-hover: #fcc16d99;
+  --telescope-pulse: #fcc16d66;
+}
+
+:root[saved-theme="light"] {
+  --telescope-highlight: #3a82f722;
+  --telescope-highlight-hover: #3a82f755;
+  --telescope-pulse: #3a82f744;
+
 }
 
 .telescopic-container {
@@ -271,15 +277,22 @@ a.external svg {
   .replay {
     visibility: hidden;
     transition: visibility 0.2s ease-in-out;
-    opacity: 50%;
+    opacity: 30%;
   }
 
   &:hover {
     .expand,
     .replay {
       visibility: visible;
+      opacity: 30%;
     }
   }
+
+    .replay {
+    position: relative;
+    top: 4px;
+  }
+
 }
 
 #telescope {
@@ -318,11 +331,57 @@ a.external svg {
 
     &.close:hover {
       background-color: var(--telescope-highlight-hover);
+      color: var(--dark);
     }
 
-    &.open > .summary,
     &.close > .expanded {
       display: none;
     }
   }
+}
+
+
+@keyframes telescope-pulse {
+  0%, 100% { background-color: var(--telescope-highlight); }
+  50%       { background-color: var(--telescope-pulse); }
+}
+
+#telescope .details.close {
+  animation: telescope-pulse 4s ease-in-out infinite;
+
+  &:hover {
+    animation: none;
+    background-color: transparent;
+    color: var(--dark);
+    transition: none;
+  }
+}
+
+#telescope .details.open {
+  animation: none !important;
+  background-color: transparent !important;
+}
+
+//image grid
+.image-grid {
+  display: grid;
+  margin-block-start: var(--img-grid-gap);
+  margin-block-end: var(--img-grid-gap);
+  grid-column-gap: var(--img-grid-gap);
+  grid-row-gap: 0;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+
+  & > br {
+    display: none;
+  }
+}
+
+.image-grid > a,
+.image-grid > img {
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: var(--image-grid-fit);
+  align-self: stretch;
 }
