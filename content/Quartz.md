@@ -3,6 +3,11 @@ title: Quartz
 draft: false
 tags:
 ---
-[Quartz](https://quartz.jzhao.xyz/) är en *static site-generator* som omvandlar [[Obsidian]] markdown innehåll till funktionella webbsidor. 
+Denna sidan är byggd på [Quartz](https://quartz.jzhao.xyz/), som är en uppsättning verktyg för att kunna omvandla [[Obsidian]] anteckningar till en funktionell sida. Skapad av *[Jacky Zhao](https://github.com/jackyzha0/quartz)*. 
 
-skapad av *[Jacky Zhao](https://github.com/jackyzha0/quartz)*. 
+---
+
+![[Pasted image 20260403162014.png]]
+
+---
+
