@@ -5,7 +5,6 @@ import SplitPanel from "./quartz/components/SplitPanel"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [
-    Component.Breadcrumbs(),
     Component.Darkmode(),
   ],
   afterBody: [SplitPanel(),

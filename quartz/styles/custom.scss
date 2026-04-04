@@ -54,8 +54,7 @@ body[data-slug="index"] {
 
   .page-header,
   .content-meta,
-  .article-title,
-  .darkmode {
+  .article-title {
     display: none !important;
   }
 
@@ -90,20 +89,11 @@ body:not([data-slug="index"]) {
     overflow: visible !important;
   }
 
-  .breadcrumbs {
-    display: block;
-    margin: 0 0 0.1rem !important;
-    padding: 0 !important;
-    font-size: 0.8rem;
-    line-height: 1;
-    opacity: 0.45;
-    letter-spacing: 0.01em;
-  }
 
   .article-title {
     margin: 0 0 0 !important;
     padding-bottom: 1rem !important;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: -0.03em;
     line-height: 1.05;
@@ -117,27 +107,12 @@ body:not([data-slug="index"]) {
 
   article p, article ul, article li {
     max-width: 100% !important;
-    line-height: 1.65;
+    line-height: 1.44;
     font-size: 0.975rem;
   }
 
   article h1, article h2, article h3 {
     letter-spacing: -0.02em;
-  }
-
-  .darkmode {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    z-index: 1000;
-    display: block !important;
-    width: 40px;
-    height: 40px;
-    padding: 8px;
-    background: var(--light);
-    border: 1px solid var(--lightgray);
-    border-radius: 50%;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
 }
 
