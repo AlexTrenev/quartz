@@ -24,7 +24,7 @@
     min-width: 0 !important;
     width: 500px !important;          
     max-width: 500px !important;
-    margin-left: calc(50vw - 380px) !important;  
+    margin-left: calc(50vw - 480px) !important;  
     margin-right: 0 !important;
     padding: 6vh 0 6rem !important;
   }
@@ -109,37 +109,10 @@ body:not([data-slug="index"]) {
     line-height: 1.05;
     position: relative;
 
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: -100vw;
-      right: -100vw;
-      height: 1px;
-      background-color: var(--lightgray);
-    }
   }
 
   .content-meta {
     display: none !important;
-  }
-
-  hr {
-    all: unset !important;
-    display: block !important;
-    height: 0 !important;
-    position: relative !important;
-    margin: 1rem 0 !important;    // luft runt egna dividers
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -100vw;
-      right: -100vw;
-      height: 1px;
-      background-color: var(--lightgray);
-    }
   }
 
   article p, article ul, article li {
