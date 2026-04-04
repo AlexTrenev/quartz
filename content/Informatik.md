@@ -1,5 +1,5 @@
 ---
-title: Systemvetenskap
+title: Systemvetenskap / Informatik / Information Systems
 draft: false
 tags:
 ---
