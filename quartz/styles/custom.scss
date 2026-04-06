@@ -333,3 +333,100 @@ a.external svg {
   object-fit: var(--image-grid-fit);
   align-self: stretch;
 }
+
+
+
+body:not([data-slug="index"]) {
+  .article-title {
+    font-size: 1.6rem;
+    font-weight: 400;          
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    color: var(--dark);
+    margin-bottom: 0.25rem !important;
+    padding-bottom: 0 !important;
+    font-family: 'DM Serif Display', serif;
+  }
+
+  .page-description {
+    font-size: 0.8rem;
+    color: var(--gray);
+    letter-spacing: 0.06em;
+    margin-bottom: 2rem;
+  }
+
+  article h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: lowercase;
+    color: var(--gray);
+    margin: 2.4rem 0 0.9rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.5px solid var(--lightgray);
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+
+    // line
+    &::after {
+      content: "";
+      flex: 1;
+      height: 0;        
+    }
+  }
+
+  article h3 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: var(--darkgray);
+    margin: 1.6rem 0 0.5rem;
+    text-transform: lowercase;
+  }
+
+
+  article p, article ul, article li {
+    font-size: 0.9rem;
+    line-height: 1.75;
+    color: var(--darkgray);
+  }
+
+  
+  //ta bort prob
+
+  article img {
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid var(--lightgray);
+    display: block;
+    margin: 1.4rem 0 0.4rem;
+  }
+
+  article img + em,
+  article p > img ~ em {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--gray);
+    font-style: normal;
+    letter-spacing: 0.04em;
+    margin-top: 0.3rem;
+    margin-bottom: 1.2rem;
+  }
+
+  article blockquote {
+    border-left: 2px solid var(--lightgray);
+    margin: 1.4rem 0;
+    padding: 0 0 0 1.2rem;
+    color: var(--gray);
+    font-size: 0.875rem;
+    line-height: 1.7;
+  }
+
+  article code:not(pre code) {
+    background: var(--highlight);
+    border-radius: 3px;
+    padding: 1px 5px;
+    font-size: 0.82em;
+    color: var(--darkgray);
+  }
+}
