@@ -4,7 +4,7 @@ draft: false
 tags:
 status: ej färdig!
 ---
-En filmsajt som visar filmer i ett galleriformat med bilder och metadata hämtad från externa api:er. Byggd för att lära mig api-hantering och hur man strukturerar api-logik på ett rent sätt inom ett projekt.
+En filmsajt som visar filmer i ett galleriformat med bilder och metadata hämtad från externa APIer. Byggd för att lära mig API-hantering och hur man strukturerar API-logik på ett rent sätt inom ett projekt.
 
 Tech: React, TypeScript, Tailwind CSS, Vite, REST-API
 
@@ -12,9 +12,9 @@ Tech: React, TypeScript, Tailwind CSS, Vite, REST-API
 *Startsida*
 ## Hur den fungerar
 
-Sidan använder två olika api:er: [*TMDB*](https://www.themoviedb.org/) som primär källa för filmdata och bilder, och [*OMDB*](https://www.omdbapi.com/) för berikande med IMDB-betyg. 
+Sidan använder två olika APIer: [*TMDB*](https://www.themoviedb.org/) som primär källa för filmdata och bilder, och [*OMDB*](https://www.omdbapi.com/) för berikande med IMDB-betyg. 
 
-Alla api-anrop hanteras genom en dedikerad fil i projektet, vilket håller frontend-komponenterna rena och api-logiken samlad på ett ställe.
+Alla API-anrop hanteras genom en dedikerad fil i projektet, vilket håller frontend-komponenterna rena och API-logiken samlad på ett ställe.
 
 ## Hitta film-funktion
 
@@ -29,7 +29,7 @@ För att lösa detta skapade jag en `GENRE_MAP` som översätter mina egna kateg
 
 ![[findmovie.gif]]
 ## Vad jag lärde mig
-- Hålla api-logik separerad från frontend-komponenter
+- Hålla API-logik separerad från frontend-komponenter
 - Hantera och kombinera svar från två olika datakällor
 - Mappa/transformera data
 - Använda [[Postman]] för att testa api:er innan integration

@@ -5,9 +5,9 @@ tags:
 ---
 jag bygger projekt för att lära mig. varje projekt är en ursäkt att testa något jag inte rört tidigare.
 
-[[filmindex]]
+[[gmail-notion pipeline]] 
 
-[[gmail2notion pipeline]] 
+[[film index]]
 
 [[paintracker]]
 

@@ -1,5 +1,5 @@
-[[filmindex]]
+[[film index]]
 
-[[gmail2notion pipeline]]
+[[gmail-notion pipeline]]
 
 [[paintracker]]

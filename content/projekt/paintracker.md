@@ -3,52 +3,37 @@ title: Paintracker
 draft: false
 tags:
 ---
-<div style="
-  display: flex; 
-  align-items: center; 
-  gap: 12px; 
-  margin: 0.5rem 0 1.5rem 0;
-  font-family: var(--codeFont);
-  font-size: 0.85rem;
-">
-  <span style="
-    color: var(--secondary);
-    border-right: 1px solid var(--gray);
-    padding-right: 12px;
-    font-weight: 600;
-  ">
-    Avslutad
-  </span>
+En applikation för att registrera och följa skador och smärta över tid, framtagen för idrottare och fysioterapeuter.
 
-  <div style="display: flex; gap: 8px; color: var(--gray);">
-    <span style="color: var(--tertiary);">Dart</span>
-    <span style="opacity: 0.4;">/</span>
-    <span style="color: var(--tertiary);">Flutter</span>
-    <span style="opacity: 0.4;">/</span>
-    <span style="color: var(--tertiary);">React</span>
-    <span style="opacity: 0.4;">/</span>
-    <span style="color: var(--tertiary);">Firebase</span>
-  </div>
-</div>
+Användare loggar smärtnivåer och återhämtning i en mobilapp, medan fysioterapeuter får en översikt över patienternas historik via ett separat webbgränssnitt.
 
-En app för att registrera och följa skador, framtagen för idrottare och fysioterapeuter. Användaren loggar smärtor och återhämtning i appen och fysioterapeuten kan övervaka utvecklingen via webbgränssnittet. 
+Projektet är byggt som ett grupprojekt i ett team på fyra personer.
 
-Byggd som ett grupprojekt i ett team på fyra personer.
+**Tech:** Flutter (Dart), React, TypeScript, Firebase
 
----
 ## Hur den fungerar
 
-Användare loggar skador och smärtor genom en mobilapplikation. Denna delen av projektet är byggd med Dart / Flutter. Sjukgymnaster får en överblick av patienthistorik genom en separat dashboard, byggd med React. 
+Systemet består av två separata klienter:
 
-Data lagras och synkas med Firebase.
+Mobilapplikationen (Flutter) används av användare för att logga skador, smärtnivåer och återhämtningsstatus över tid.
 
---- 
+Webbapplikationen (React) fungerar som en dashboard för fysioterapeuter där de kan följa patienthistorik och utveckling.
+
+All data synkas via Firebase och delas mellan de två klienterna i realtid.
+
+## Arkitektur & fokus
+
+Projektet var uppdelat i tydliga ansvarsområden mellan mobil- och webbdel, med fokus på gemensam datamodell via Firebase.
+
+- separata klienter för olika användargrupper
+- realtidsdata via Firebase
+- strukturerad datamodell för medicinsk information
+- fokus på enkelhet och tydlighet i användarflöden
+
 ## Vad jag lärde mig
-
- - Kravhantering
-	 - Anpassa gränssnitt för två olika användargrupper
-	 - Översätta användarbehov till faktiska funktioner
- - Arbeta i lag med separata ansvarsområden
- - Att arbeta inom en reglerad bransch (sjukvård) med tydliga begränsningar
-
-___
+- kravhantering i ett teamprojekt
+- hur man designar system för flera användartyper
+- att översätta användarbehov till konkreta features
+- arbete i team med tydliga ansvarsområden
+- utveckling inom en känslig domän (hälso-/vårdinformation)
+- hur realtidsdata fungerar med Firebase
