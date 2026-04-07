@@ -25,4 +25,4 @@ Slutligen lagras utvalda mail som strukturerade entries i Notion med information
 
 ## Nästa steg
 
-Ersätta cron-baserad körning med Gmail push-notiser via Google Cloud Pub/Sub för att göra systemet mer realtidsbaserat och event-driven
+Ersätta cron-baserad körning med Gmail push-notiser via Google Cloud Pub/Sub för att göra systemet mer realtidsbaserat och event-driven.
