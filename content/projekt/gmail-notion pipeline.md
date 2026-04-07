@@ -9,7 +9,7 @@ Projektet är byggt för att förstå hur autentisering, API-integration och dat
 
 Tech: Node.js, OAuth2, REST-API, Cron
 
-## hur det fungerar
+## Hur den fungerar
 
 Autentisering sker via OAuth2 med authorization code flow, där både access- och refresh tokens används för att få långvarig åtkomst till Gmail API.
 
