@@ -358,11 +358,10 @@ body:not([data-slug="index"]) {
   article h2 {
     font-size: 1rem;
     font-weight: 400;
-    text-transform: lowercase;
     color: var(--gray);
     margin: 2.4rem 0 0.9rem;
     padding-bottom: 0.2rem;
-    border-bottom: 0.5px solid var(--lightgray);
+    border-bottom: 1.5px solid var(--lightgray);
     display: flex;
     align-items: center;
     gap: 0.6rem;
@@ -405,11 +404,11 @@ body:not([data-slug="index"]) {
   article img + em,
   article p > img ~ em {
     display: block;
-    font-size: 0.75rem;
+    font-size: 0.80rem;
     color: var(--gray);
     font-style: normal;
     letter-spacing: 0.04em;
-    margin-top: 0.3rem;
+    margin-top: 1rem;
     margin-bottom: 1.2rem;
   }
 
@@ -423,10 +422,14 @@ body:not([data-slug="index"]) {
   }
 
   article code:not(pre code) {
-    background: var(--highlight);
     border-radius: 3px;
     padding: 1px 5px;
     font-size: 0.82em;
     color: var(--darkgray);
   }
+}
+
+article img {
+  max-width: 500px;
+  width: 100%;
 }
