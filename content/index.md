@@ -16,7 +16,7 @@ Hej, mitt namn är Alexander och detta är min personliga hemsida. Kandidatexame
 ```
 
 ----
-*Annat*
+*Misc*
 
-[[Setup]]   ·    [[Quartz]] 
+[Linkedin](https://www.linkedin.com/in/alexandertrenevski) · [Mail](mailto:alexander.trenevski@gmail.com) · [[Setup]] · [[Quartz]] 
 

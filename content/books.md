@@ -1,8 +1,7 @@
 ---
-title: böcker
+title: Böcker
 draft: false
 tags:
-  - example-tag
 ---
 *2026*
 

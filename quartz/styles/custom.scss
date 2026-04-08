@@ -125,8 +125,6 @@ article a.internal {
   color: var(--gray);
   text-decoration: underline;
   text-decoration-color: var(--gray);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
   font-weight: 400;
   transition: text-decoration-color 0.2s ease, color 0.2s ease;
 
@@ -175,20 +173,33 @@ body[data-slug="index"] {
 
 //externa länkar
 a.external {
-  color: #6c6865;
-  text-decoration: none;
-  display: inline-flex;
+  color: var(--gray) !important;
+  text-decoration: underLine !important;
+  font-weight: 400;
+  opacity: 1 !important;
+  display: inline;
   align-items: center;
   gap: 1px;
+  transition: text-decoration-color 0.2s ease, color 0.2s ease;
 
   &::after {
     content: "↗";
-    font-size: 0.8em;
+    font-size: 0.7em;
+    text-decoration: none !important;
+    margin-left: -1px;
     transition: transform 0.2s ease;
-    display: inline-block;
+    display: inline;
+    vertical-align: baseline;
+    position: relative;
 
   }
+
+  &:hover {
+    color: var(--tertiary) !important;
+    text-decoration-color: var(--tertiary);
+  }
 }
+
 
 a.external svg {
   display: none !important;
@@ -204,7 +215,7 @@ a.external svg {
 :root[saved-theme="light"] {
   --telescope-highlight: #00000011;
   --telescope-highlight-hover: #00000022;
-  --telescope-pulse: #fcc16d33;
+  --telescope-pulse: #00000022;
 }
 
 .telescopic-container {
@@ -431,4 +442,21 @@ body:not([data-slug="index"]) {
 article img {
   max-width: 500px;
   width: 100%;
+}
+
+a + a {
+  margin-left: 0.2rem;
+}
+
+//scrollbar
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+html {
+  -ms-overflow-style: none;
 }

@@ -12,7 +12,7 @@ Tech: React, TypeScript, Tailwind CSS, Vite, REST-API
 *Startsida*
 ## Hur den fungerar
 
-Sidan använder två olika APIer: [*TMDB*](https://www.themoviedb.org/) som primär källa för filmdata och bilder, och [*OMDB*](https://www.omdbapi.com/) för berikande med IMDB-betyg. 
+Sidan använder två olika APIer: [TMDB](https://www.themoviedb.org/) som primär källa för filmdata och bilder, och [OMDB](https://www.omdbapi.com/) för berikande med IMDB-betyg. 
 
 Alla API-anrop hanteras genom en dedikerad fil i projektet, vilket håller frontend-komponenterna rena och API-logiken samlad på ett ställe.
 
