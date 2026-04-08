@@ -22,9 +22,9 @@
 
   @media (min-width: 1400px) {
     min-width: 0 !important;
-    width: 500px !important;          
+    width: 500px !important;
     max-width: 500px !important;
-    margin-left: calc(50vw - 480px) !important;  
+    margin-left: calc(50vw - 480px) !important;
     margin-right: 0 !important;
     padding: 6vh 0 6rem !important;
   }
@@ -179,8 +179,8 @@ a.external {
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-  gap: 1px;              
-  
+  gap: 1px;
+
   &::after {
     content: "↗";
     font-size: 0.8em;
@@ -202,10 +202,9 @@ a.external svg {
 }
 
 :root[saved-theme="light"] {
-  --telescope-highlight: #3a82f722;
-  --telescope-highlight-hover: #3a82f755;
-  --telescope-pulse: #3a82f744;
-
+  --telescope-highlight: #00000011;
+  --telescope-highlight-hover: #00000022;
+  --telescope-pulse: #fcc16d33;
 }
 
 .telescopic-container {
@@ -339,7 +338,7 @@ a.external svg {
 body:not([data-slug="index"]) {
   .article-title {
     font-size: 1.6rem;
-    font-weight: 400;          
+    font-weight: 400;
     letter-spacing: -0.03em;
     line-height: 1.1;
     color: var(--dark);
@@ -370,7 +369,7 @@ body:not([data-slug="index"]) {
     &::after {
       content: "";
       flex: 1;
-      height: 0;        
+      height: 0;
     }
   }
 
@@ -390,7 +389,7 @@ body:not([data-slug="index"]) {
     color: var(--darkgray);
   }
 
-  
+
   //ta bort prob
 
   article img {
