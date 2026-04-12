@@ -34,6 +34,8 @@ För att lösa detta skapade jag en `GENRE_MAP` som översätter mina egna kateg
 - Mappa/transformera data
 - Använda [[Postman]] för att testa api:er innan integration
 
+
+
 ![[Skärmavbild 2026-04-02 kl. 23.39.14.png]]
 *Galleri-vy*
 
