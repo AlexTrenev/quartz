@@ -18,6 +18,8 @@ Har börjat använda [[Obsidian]] för mina anteckningar. Gillar även [[Notion]
 
 ## Webbläsare
 
-Jag använder [Zen Browser](https://zen-browser.app/) som min standardwebbläsare. Stilren + inte Chromium, vilket är ett stort plus!
+Jag använder [Zen Browser](https://zen-browser.app/) som min standardwebbläsare. Stilren + Firefox-based, vilket är ett stort plus!
+
+Testar även [Helium Browser](https://helium.computer/), som är en integritetsfokuserad webbläsare baserat på Chromium. 
 
 
