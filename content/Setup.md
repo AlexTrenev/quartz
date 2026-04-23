@@ -22,4 +22,12 @@ Jag använder [Zen Browser](https://zen-browser.app/) som min standardwebbläsar
 
 Testar även [Helium Browser](https://helium.computer/), som är en integritetsfokuserad webbläsare baserat på Chromium. 
 
+## Launcher
+
+Jag använder [Raycast](https://www.raycast.com/) som launcher istället för Spotlight. Snabb, keyboard-first, och man kan konfigurera hotkeys för allt möjligt (jag använder hotkeys för bl.a window management!).
+
+Raycast har även många andra funktioner som systeminställningar och clipboardhistorik (+ många användbara [extensions](https://www.raycast.com/store)). 
+
+![[Skärmavbild 2026-04-24 kl. 01.17.40.png]]
+*Raycast*
 
