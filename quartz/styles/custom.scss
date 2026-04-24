@@ -122,9 +122,9 @@ article a.internal {
   background-color: transparent;
   padding: 0;
   border-radius: 0;
-  color: var(--gray);
+  color: var(--secondary);
   text-decoration: underline;
-  text-decoration-color: var(--gray);
+  text-decoration-color: var(--secondary);
   font-weight: 400;
   transition: text-decoration-color 0.2s ease, color 0.2s ease;
 
@@ -201,8 +201,8 @@ body[data-slug="index"] {
 
 //externa länkar
 a.external {
-  color: var(--gray) !important;
   text-decoration: underLine !important;
+  text-decoration-color: var(--secondary);
   font-weight: 400;
   opacity: 1 !important;
   display: inline;
