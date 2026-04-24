@@ -4,6 +4,8 @@ draft: false
 tags:
 status: ej färdig!
 ---
+## 2026
+
 En filmsajt som visar filmer i ett galleriformat med bilder och metadata hämtad från externa APIer. Byggd för att lära mig API-hantering och hur man strukturerar API-logik på ett rent sätt inom ett projekt.
 
 Tech: React, TypeScript, Tailwind CSS, Vite, REST-API

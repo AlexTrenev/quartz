@@ -3,6 +3,8 @@ title: Gmail-Notion Pipeline
 draft: false
 tags:
 ---
+## 2026
+
 En Node.js-baserad backend som automatiskt övervakar en Gmail-inkorg och strukturerar relevanta mail i en Notion-databas.
 
 Projektet är byggt för att förstå hur autentisering, API-integration och datatransformation fungerar i ett end-to-end flöde mellan externa tjänster.

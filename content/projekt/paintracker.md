@@ -3,6 +3,8 @@ title: Paintracker
 draft: false
 tags:
 ---
+## 2024--2025
+
 En applikation för att registrera och följa skador och smärta över tid, framtagen för idrottare och fysioterapeuter.
 
 Användare loggar smärtnivåer och återhämtning i en mobilapp, medan fysioterapeuter får en översikt över patienternas historik via ett separat webbgränssnitt.
