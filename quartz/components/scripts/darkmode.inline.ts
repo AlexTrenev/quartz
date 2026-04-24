@@ -9,25 +9,43 @@ const emitThemeChangeEvent = (theme: "light" | "dark") => {
   document.dispatchEvent(event)
 }
 
-document.addEventListener("nav", () => {
-  const switchTheme = () => {
-    const newTheme =
-      document.documentElement.getAttribute("saved-theme") === "dark" ? "light" : "dark"
-    document.documentElement.setAttribute("saved-theme", newTheme)
+const applyTheme = (newTheme: "light" | "dark", x?: number, y?: number) => {
+  const root = document.documentElement
+
+  const doSwitch = () => {
+    root.setAttribute("saved-theme", newTheme)
     localStorage.setItem("theme", newTheme)
     emitThemeChangeEvent(newTheme)
+  }
+
+  // @ts-ignore
+  if (!document.startViewTransition || x === undefined || y === undefined) {
+    doSwitch()
+    return
+  }
+
+  root.style.setProperty("--vt-x", `${x}px`)
+  root.style.setProperty("--vt-y", `${y}px`)
+
+  // @ts-ignore
+  document.startViewTransition(doSwitch)
+}
+
+document.addEventListener("nav", () => {
+  const switchTheme = (e: MouseEvent) => {
+    const newTheme =
+      document.documentElement.getAttribute("saved-theme") === "dark" ? "light" : "dark"
+    applyTheme(newTheme, e.clientX, e.clientY)
   }
 
   const themeChange = (e: MediaQueryListEvent) => {
     const newTheme = e.matches ? "dark" : "light"
-    document.documentElement.setAttribute("saved-theme", newTheme)
-    localStorage.setItem("theme", newTheme)
-    emitThemeChangeEvent(newTheme)
+    applyTheme(newTheme)
   }
 
   for (const darkmodeButton of document.getElementsByClassName("darkmode")) {
-    darkmodeButton.addEventListener("click", switchTheme)
-    window.addCleanup(() => darkmodeButton.removeEventListener("click", switchTheme))
+    darkmodeButton.addEventListener("click", switchTheme as EventListener)
+    window.addCleanup(() => darkmodeButton.removeEventListener("click", switchTheme as EventListener))
   }
 
   // Listen for changes in prefers-color-scheme

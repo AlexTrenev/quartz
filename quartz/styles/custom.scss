@@ -159,6 +159,34 @@ article h1, article h2, article h3 {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+.index-darkmode {
+  position: static !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  width: 18px !important;
+  height: 18px !important;
+  padding: 0 !important;
+  background: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  opacity: 0.5;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  & svg {
+    width: 14px !important;
+    height: 14px !important;
+    position: static !important;
+    top: auto !important;
+  }
+}
+
 
 .page-listing {
   display: none !important;

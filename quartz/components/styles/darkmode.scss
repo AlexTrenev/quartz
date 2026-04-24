@@ -45,3 +45,29 @@
     display: none;
   }
 }
+
+@property --vt-r {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 0px;
+}
+
+@keyframes vt-reveal {
+  from { --vt-r: 0px; }
+  to   { --vt-r: 150vmax; }
+}
+
+::view-transition-new(root) {
+  animation: vt-reveal 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  mask-image: radial-gradient(
+    circle at var(--vt-x) var(--vt-y),
+    black calc(var(--vt-r) - 40px),
+    transparent calc(var(--vt-r) + 40px)
+  );
+  z-index: 9999;
+}
+
+::view-transition-old(root) {
+  animation: none;
+  z-index: 1;
+}
