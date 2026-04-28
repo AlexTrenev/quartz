@@ -1,6 +1,7 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 import SplitPanel from "./quartz/components/SplitPanel"
+import PageNav from "./quartz/components/PageNav"
 
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
@@ -18,6 +19,7 @@ export const sharedPageComponents: SharedLayout = {
 
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
+    PageNav(),
     Component.ArticleTitle(),
     Component.ContentMeta({
       showReadingTime: true,

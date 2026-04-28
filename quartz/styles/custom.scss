@@ -15,13 +15,12 @@
 .center {
   grid-column: 1 / -1 !important;
   box-sizing: border-box !important;
-  min-width: 0;
+  min-width: 0 !important;
   width: 100% !important;
   max-width: 100% !important;
-  padding: 3rem 1rem 4rem !important;
+  padding: 3rem 1.5rem 4rem !important;
 
   @media (min-width: 1400px) {
-    min-width: 0 !important;
     width: 500px !important;
     max-width: 500px !important;
     margin-left: calc(50vw - 480px) !important;
@@ -82,20 +81,22 @@ body:not([data-slug="index"]) {
   .center {
     min-width: 0 !important;
     width: 100% !important;
-    max-width: 47em !important;
-    margin-left: auto !important;
+    max-width: 44em !important;
+    margin-left: 0 !important;
     margin-right: auto !important;
-    padding: 4rem 1.5rem 6rem !important;
+    padding: 3rem 1.5rem 6rem !important;
   }
 
   @media (min-width: 1400px) {
     .center {
-      padding: 6vh 0 6rem !important;
+      margin-left: calc(50vw - 480px) !important;
+      padding: 3rem 0 6rem !important;
     }
   }
 
   article {
     overflow: visible !important;
+    margin-top: 0 !important;
   }
 
   .content-meta {
@@ -108,7 +109,7 @@ body:not([data-slug="index"]) {
     font-weight: 500;
     letter-spacing: -0.02em;
     line-height: 1.25;
-    margin-top: 1.5em !important;
+    margin-top: 3rem !important;
     margin-bottom: 0.25em !important;
     padding-bottom: 0 !important;
   }
